@@ -18,6 +18,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatStepperModule} from '@angular/material/stepper';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   exports: [
@@ -38,7 +39,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatToolbarModule,
     MatStepperModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    ReactiveFormsModule,
   ]
 })
 export class MaterialModule { }

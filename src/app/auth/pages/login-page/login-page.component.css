@@ -1,0 +1,60 @@
+.login-card {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .left-panel {
+    background: linear-gradient(to right, #4b0082, #8a2be2);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .game-art {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .right-panel {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .social-login {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-buttons button {
+    margin: 0 5px;
+  }
