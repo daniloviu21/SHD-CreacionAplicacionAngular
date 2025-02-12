@@ -6,9 +6,6 @@
   <button *ngFor="let item of navItems" mat-button [routerLink]="item.url">
     {{ item.label }}
   </button>
-
-  <!-- Botón especial para Sign Up -->
-  <button mat-stroked-button [routerLink]="signUpUrl">Free Sign Up</button>
 </mat-toolbar>
 
 <router-outlet></router-outlet>

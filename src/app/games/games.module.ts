@@ -6,13 +6,17 @@ import { GamePageComponent } from './pages/game-page/game-page.component';
 import { MaterialModule } from '../material/material.module';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { FooterComponent } from '../components/footer/footer.component';
+import { CardGamePageComponent } from './pages/card-game-page/card-game-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 
 @NgModule({
   declarations: [
     GamePageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    CardGamePageComponent,
+    AboutPageComponent
   ],
   imports: [
     CommonModule,
