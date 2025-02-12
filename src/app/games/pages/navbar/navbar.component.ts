@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   navItems = [
-    { label: 'Solutions', url: 'home' },
-    { label: 'Games', url: 'home' },
+    { label: 'Inicio', url: 'home' },
     { label: 'Pricing', url: '/pricing' },
     { label: 'Resources', url: '/resources' },
     { label: 'Company', url: '/company' },

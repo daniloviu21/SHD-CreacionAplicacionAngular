@@ -5,12 +5,14 @@ import { GamesRoutingModule } from './games-routing.module';
 import { GamePageComponent } from './pages/game-page/game-page.component';
 import { MaterialModule } from '../material/material.module';
 import { NavbarComponent } from './pages/navbar/navbar.component';
+import { FooterComponent } from '../components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     GamePageComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
