@@ -1,0 +1,16 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  mat-toolbar {
+    background: #673ab7; /* Modifica el color de fondo según tu tema */
+  }
+  
+  button {
+    margin-right: 8px;
+  }
+  
+  mat-stroked-button {
+    border-color: white;
+  }
+  
