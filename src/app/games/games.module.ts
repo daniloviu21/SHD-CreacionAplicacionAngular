@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { GamesRoutingModule } from './games-routing.module';
 import { GamePageComponent } from './pages/game-page/game-page.component';
-import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { MaterialModule } from '../material/material.module';
+import { NavbarComponent } from './pages/navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     GamePageComponent,
-    LayoutPageComponent
+    NavbarComponent
   ],
   imports: [
     CommonModule,
