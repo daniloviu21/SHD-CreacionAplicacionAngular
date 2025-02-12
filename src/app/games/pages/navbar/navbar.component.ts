@@ -9,10 +9,8 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   navItems = [
     { label: 'Inicio', url: 'home' },
-    { label: 'Pricing', url: '/pricing' },
-    { label: 'Resources', url: '/resources' },
-    { label: 'Company', url: '/company' },
-    { label: 'Sign In', url: '/sign-in' }
+    { label: 'Juegos', url: 'games' },
+    { label: 'Acerca de Nosotros', url: 'about' },
   ];
 
   signUpUrl = '/sign-up';
