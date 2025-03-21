@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { JuegosService } from '../../services/juegos.service';
+import { Game } from '../../interfaces/game';
 
 @Component({
   selector: 'app-card-game-page',
@@ -6,11 +8,17 @@ import { Component } from '@angular/core';
   templateUrl: './card-game-page.component.html',
   styleUrl: './card-game-page.component.css'
 })
-export class CardGamePageComponent {
-  games = [
-    { name: 'Minecraft', genre: 'Adventure', description: 'Explore a blocky, procedurally-generated 3D world with infinite terrain, and discover and extract raw materials, craft tools and items, and build structures.', image: 'assets/minecraft.jpg' },
-    { name: 'Grand Theft Auto V', genre: 'Action', description: 'An open-world crime epic set in the sprawling cityscape of Los Santos and its surrounding areas.', image: 'assets/gtav.jpg' },
-    { name: 'Fortnite', genre: 'Action', description: 'A battle royale shooter that combines gunplay, crafting, and building to create a dynamic competitive experience.', image: 'assets/fortnite.jpg' },
-    { name: 'Roblox', genre: 'Action', description: 'A global platform where millions of people gather together every day to imagine, create, and share experiences with each other in immersive, user-generated 3D worlds.', image: 'assets/robux.jpg' }
-  ];
+export class CardGamePageComponent implements OnInit {
+
+  public juegos: Game[] = [];
+
+  constructor(private juegosService: JuegosService){
+  }
+
+  ngOnInit(): void{
+    this.juegosService.getJuegos().subscribe(juegos => {
+      console.log('Juegos cargados:', juegos);
+      this.juegos = juegos;
+    });
+  }
 }

@@ -1,31 +1,107 @@
-/* card-game-page.component.css */
+@keyframes borderAnimation {
+  0% {
+      border-color: #ff4081;
+  }
+  25% {
+      border-color: #ff9800;
+  }
+  50% {
+      border-color: #4caf50;
+  }
+  75% {
+      border-color: #00bcd4;
+  }
+  100% {
+      border-color: #ff4081;
+  }
+}
+
 .game-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    padding: 20px;
-    margin-top: 50px;
-  }
-  
-  .game-card {
-    width: 300px;
-    transition: box-shadow 0.3s;
-  }
-  
-  .game-card:hover {
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  }
-  
-  .game-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-size: cover;
-  }
-  
-  mat-card-image {
-    height: 150px;
-    object-fit: cover;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 50px;
+  background: #1e1e1e;  /* Fondo oscuro */
+  border-radius: 10px;
+}
+
+.game-card {
+  width: 320px;
+  background: #2c2c2c;  /* Fondo oscuro de la tarjeta */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: borderAnimation 3s infinite linear;  /* Animación en el borde */
+  border: 4px solid #ff4081;  /* Borde inicial */
+  box-sizing: border-box;  /* Asegura que el borde no afecte el tamaño total */
+  display: flex;
+  flex-direction: column;
+  height: 100%;  /* Asegura que la tarjeta se ajuste a su contenido */
+}
+
+.game-card:hover {
+  transform: translateY(-10px);  /* Sube un poco la tarjeta al pasar el mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.game-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-top: 10px;
+  border: 2px solid #ff4081;  /* Borde de color vibrante */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+mat-card-header {
+  background: #333;  /* Fondo oscuro para el encabezado */
+  padding: 10px 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: #fff;  /* Texto blanco */
+}
+
+mat-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff4081;  /* Color vibrante para el título */
+}
+
+mat-card-subtitle {
+  font-size: 0.9rem;
+  color: #ff9800;  /* Color anaranjado para el género */
+}
+
+mat-card-content {
+  padding: 15px;
+  color: #ddd;  /* Texto en gris claro */
+  font-size: 0.95rem;
+  line-height: 1.4;
+  flex-grow: 1;  /* Permite que el contenido crezca y ocupe espacio */
+}
+
+mat-card-actions {
+  padding: 10px 15px;
+  background: #444;  /* Fondo más oscuro para las acciones */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: auto;  /* Asegura que el botón esté al final de la tarjeta */
+}
+
+button.mat-button {
+  color: #ff4081;  /* Color vibrante para el botón */
+  border: 2px solid #ff4081;  /* Borde del botón */
+  border-radius: 25px;
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%;  /* Hace que el botón ocupe todo el ancho disponible */
+}
+
+button.mat-button:hover {
+  background-color: #ff4081;
+  color: #fff;  /* Botón cambia a fondo rosa y texto blanco al hacer hover */
+}

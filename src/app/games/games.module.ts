@@ -8,6 +8,7 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { FooterComponent } from '../components/footer/footer.component';
 import { CardGamePageComponent } from './pages/card-game-page/card-game-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { GameImagePipe } from './pipes/game-image.pipe';
 
 
 @NgModule({
@@ -16,12 +17,13 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     NavbarComponent,
     FooterComponent,
     CardGamePageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    GameImagePipe
   ],
   imports: [
     CommonModule,
     GamesRoutingModule,
-    MaterialModule
+    MaterialModule,
   ]
 })
 export class GamesModule { }

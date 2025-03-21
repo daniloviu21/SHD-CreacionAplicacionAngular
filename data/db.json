@@ -1,0 +1,150 @@
+{
+    "users":[
+        {
+            "id":1,
+            "email":"angel@example.com",
+            "user":"angel1",
+            "password":"angel",
+            "juegos":[
+
+            ]
+        },
+
+        {
+            "id":2,
+            "email":"kevin@example.com",
+            "user":"kevin",
+            "password":"kevin"
+        },
+
+        {
+            "id":3,
+            "email":"mundo@example.com",
+            "user":"mundo",
+            "password":"mundo"
+        },
+
+        
+        {
+            "id":4,
+            "email":"tadeo@example.com",
+            "user":"tadeo",
+            "password":"tadeo"
+        }
+    ],
+
+    "juegos":[
+        {
+            "id": 1,
+            "name": "Assassin's Creed",
+            "genre": "Action",
+            "description": "Step into the shoes of a master assassin in a historical setting, using stealth and skill to overcome enemies.",
+            "image_url": "./image-games/assassins-creed.jpeg"
+          },
+          {
+            "id": 2,
+            "name": "Assassin's Creed Odyssey",
+            "genre": "RPG",
+            "description": "Explore ancient Greece in an epic narrative of heroism, myth, and conflict between Sparta and Athens.",
+            "image_url": "./image-games/assassins-odyssey.jpeg"
+          },
+          {
+            "id": 3,
+            "name": "FIFA 24",
+            "genre": "Sports",
+            "description": "Experience the world's game with updated teams, leagues, and players for the most authentic football experience.",
+            "image_url": "./image-games/fifa24.jpeg"
+          },
+          {
+            "id": 4,
+            "name": "Flight Simulator",
+            "genre": "Simulation",
+            "description": "Pilot a wide array of aircraft and explore breathtaking landscapes with realistic weather and physics.",
+            "image_url": "./image-games/flight-simulator.jpeg"
+          },
+          {
+            "id": 5,
+            "name": "Forza",
+            "genre": "Racing",
+            "description": "Speed through stunning scenery in a variety of cars, competing in races and challenges.",
+            "image_url": "./image-games/forza.jpeg"
+          },
+          {
+            "id": 6,
+            "name": "GTA V",
+            "genre": "Action",
+            "description": "An open-world crime epic set in the sprawling cityscape of Los Santos and its surrounding areas.",
+            "image_url": "./image-games/gtav.jpg"
+          },
+          {
+            "id": 7,
+            "name": "Indiana Jones",
+            "genre": "Adventure",
+            "description": "Embark on a thrilling adventure to uncover ancient artifacts and solve mysteries as the legendary Indiana Jones.",
+            "image_url": "./image-games/indiana-jones.jpeg"
+          },
+          {
+            "id": 8,
+            "name": "Minecraft",
+            "genre": "Adventure",
+            "description": "Explore a blocky, procedurally-generated 3D world with infinite terrain, and discover and extract raw materials, craft tools and items, and build structures.",
+            "image_url": "./image-games/minecraft.jpg"
+          },
+          {
+            "id": 9,
+            "name": "Mortal Kombat 11",
+            "genre": "Action",
+            "description": "Enter the brutal world of Mortal Kombat with enhanced graphics and mechanics, delivering an intense fighting experience.",
+            "image_url": "./image-games/mortal-kombat.jpeg"
+          },
+          {
+            "id": 10,
+            "name": "Mythwrecked",
+            "genre": "Adventure",
+            "description": "Survive on a mythical island filled with dangerous creatures and ancient secrets waiting to be discovered.",
+            "image_url": "./image-games/mythwrecked.jpeg"
+          },
+          {
+            "id": 11,
+            "name": "Roblox",
+            "genre": "Action",
+            "description": "A global platform where millions of people gather together every day to imagine, create, and share experiences with each other in immersive, user-generated 3D worlds.",
+            "image_url": "./image-games/robux.jpg"
+          },
+          {
+            "id": 12,
+            "name": "Call of Duty Black Ops 6",
+            "genre": "First-Person Shooter",
+            "description": "Call of Duty Black Ops 6 is a high-octane first-person shooter featuring intense military combat and multiplayer modes.",
+            "image_url": "./image-games/callofduty.jpeg"
+          },
+          {
+            "id": 13,
+            "name": "Crash Bandicoot N´Sane Trilogy",
+            "genre": "Platformer",
+            "description": "The Crash Bandicoot N´Sane Trilogy brings back the classic platformer adventure with remastered graphics and new gameplay mechanics.",
+            "image_url": "./image-games/crash.jpeg"
+          },
+          {
+            "id": 14,
+            "name": "Among Us",
+            "genre": "Party, Multiplayer",
+            "description": "Among Us is a multiplayer social deduction game where players must figure out who among them is the impostor.",
+            "image_url": "./image-games/amongus.jpeg"
+          },
+          {
+            "id": 15,
+            "name": "Stalker 2",
+            "genre": "Survival Horror, First-Person Shooter",
+            "description": "Stalker 2 is an open-world survival horror game set in a post-apocalyptic environment, where players must navigate dangerous zones and fight mutated creatures.",
+            "image_url": "./image-games/stalker.jpeg"
+          },
+          {
+            "id": 16,
+            "name": "Watch Dogs Legion",
+            "genre": "Action-Adventure, Open-World",
+            "description": "Watch Dogs Legion is an open-world action-adventure game where players can recruit and play as anyone in a dystopian London, using hacking and strategy to achieve their goals.",
+            "image_url": "./image-games/whatchdogs.jpeg"
+          }
+    ]
+}
