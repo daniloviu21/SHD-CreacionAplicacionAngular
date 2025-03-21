@@ -8,6 +8,11 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { FooterComponent } from '../components/footer/footer.component';
 import { CardGamePageComponent } from './pages/card-game-page/card-game-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { FormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,6 +24,11 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     AboutPageComponent
   ],
   imports: [
+    HttpClientModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatIconModule,
+    FormsModule,
     CommonModule,
     GamesRoutingModule,
     MaterialModule

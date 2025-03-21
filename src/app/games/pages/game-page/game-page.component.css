@@ -65,6 +65,131 @@
     color: #FF6347; /* Un toque de color para los ítems de la lista */
   }
   
-  
-  
-  
+ /* Estilos para el botón flotante del chat */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para el modal del chat */
+.chat-modal {
+  position: fixed;
+  bottom: 692px;
+  right: 20px;
+  width: 402px;
+  height: 604px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.chat-modal.open {
+  transform: translateY(0);
+}
+
+.chat-header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f3f3f3;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #ececec;
+  outline: none;
+}
+
+.chat-input button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chat-input button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* Mensajes dentro del chat */
+.message {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.chat-header button mat-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.chat-header button {
+  background-color: red;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ajustar colores de los mensajes */
+.message.user {
+  background: #FF1177; /* Color del botón */
+  color: white;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background: #000; /* Color negro */
+  color: white;
+  align-self: flex-start;
+}
+
